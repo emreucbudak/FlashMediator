@@ -1,12 +1,7 @@
-﻿using FlashMediator.src.FlashMediator.Contracts;
-using FlashMediator.src.FlashMediator.Wrappers;
-using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Concurrent;
 
-namespace FlashMediator.src.FlashMediator.Impl
-{
+namespace FlashMediator;
+
     public class Mediator : IMediator
     {
         private readonly IServiceProvider _serviceProvider;
@@ -47,4 +42,4 @@ namespace FlashMediator.src.FlashMediator.Impl
             return handler.Handle(request, _serviceProvider, cancellationToken);
         }
     }
-}
+

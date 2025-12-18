@@ -1,13 +1,8 @@
-﻿using FlashMediator.src.FlashMediator.Contracts;
-using FlashMediator.src.FlashMediator.Impl;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
-using System.Text;
 
-namespace FlashMediator.src.FlashMediator.Extensions
-{
+namespace FlashMediator;
+
     public static class ServiceCollectionExtensions
     {
         public static IServiceCollection AddFlashMediator(this IServiceCollection services, params Assembly[] assemblies)
@@ -44,4 +39,4 @@ namespace FlashMediator.src.FlashMediator.Extensions
             return services;
         }
     }
-}
+

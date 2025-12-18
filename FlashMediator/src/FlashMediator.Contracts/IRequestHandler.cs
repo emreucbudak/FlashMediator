@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace FlashMediator;
 
-namespace FlashMediator.src.FlashMediator.Contracts
-{
     public interface IRequestHandler<in TRequest, TResponse>
         where TRequest : IRequest<TResponse>
     {
@@ -14,4 +10,4 @@ namespace FlashMediator.src.FlashMediator.Contracts
     {
         Task Handle(TRequest request , CancellationToken cancellationToken);
     }
-}
+

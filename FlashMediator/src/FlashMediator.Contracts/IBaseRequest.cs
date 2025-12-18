@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.ComponentModel;
 
-namespace FlashMediator.src.FlashMediator.Contracts
-{
+namespace FlashMediator;
+
+    [EditorBrowsable(EditorBrowsableState.Never)]
     public interface IBaseRequest
     {
     }
@@ -13,4 +12,4 @@ namespace FlashMediator.src.FlashMediator.Contracts
     public interface IRequest : IBaseRequest
     {
     }
-}
+
