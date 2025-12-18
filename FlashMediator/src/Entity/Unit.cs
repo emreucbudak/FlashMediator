@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace FlashMediator;
 
-namespace FlashMediator.src.Entity
-{
     public struct Unit : IEquatable<Unit>, IComparable<Unit>, IComparable
     {
         public static readonly Unit Value = new Unit();
@@ -18,4 +14,4 @@ namespace FlashMediator.src.Entity
         public static bool operator ==(Unit first, Unit second) => true;
         public static bool operator !=(Unit first, Unit second) => false;
     }
-}
+

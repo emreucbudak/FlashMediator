@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace FlashMediator;
 
-namespace FlashMediator.src.FlashMediator.Contracts
-{
     public interface IMediator
     {
         Task Send(IRequest request, CancellationToken cancellationToken = default);
@@ -11,4 +7,4 @@ namespace FlashMediator.src.FlashMediator.Contracts
  
         Task<TResponse> Send<TResponse>(IRequest<TResponse> request, CancellationToken cancellationToken = default);
     }
-}
+
